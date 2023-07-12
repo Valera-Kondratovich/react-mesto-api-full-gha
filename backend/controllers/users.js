@@ -50,6 +50,7 @@ const createUser = (req, res, next) => {
         res.status(201).send(user);
       })
         .catch((err) => {
+          console.log({message: err.message, message2: err.name, err: err.code});
           if (err.code === 11000) {
             next(new ConflictError('Этот email уже зарегистрирован в базе'));
             return;
