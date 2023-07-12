@@ -37,9 +37,9 @@ app.use(cors({
 }));
 app.use(cookieSession({
   secret: 'yourSecret',
-  secure: false,
+  secure: true,
   httpOnly: true,
-  sameSite: 'Lax',
+  sameSite: 'none',
 }));
 app.use(limiter);
 app.use(helmet());
