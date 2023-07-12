@@ -33,13 +33,13 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
 app.use(requestLogger);
 app.use(cors({
   credentials: true,
-  origin: '*',
+  origin: 'https://mesto.kondratovich.nomoreparties.sbs',
 }));
 app.use(cookieSession({
   secret: 'yourSecret',
-  secure: false,
+  secure: true,
   httpOnly: true,
-  sameSite: 'Lax',
+  sameSite: 'none',
 }));
 app.use(limiter);
 app.use(helmet());
