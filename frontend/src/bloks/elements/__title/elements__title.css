@@ -1,0 +1,25 @@
+.elements__title {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin: 0;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 850px) {
+  .elements__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .elements__title {
+    font-size: 24px;
+  }
+}

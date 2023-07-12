@@ -1,0 +1,10 @@
+.elements__img {
+  width: 100%;
+  min-height: 84%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px 10px 0 0;
+
+}

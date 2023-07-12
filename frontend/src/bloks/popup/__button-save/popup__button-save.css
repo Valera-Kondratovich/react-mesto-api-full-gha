@@ -1,0 +1,46 @@
+.popup__button-save {
+  display: block;
+  width: 100%;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  background-color: #000;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  margin-top: 25px;
+  opacity: 1;
+  -webkit-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.popup__button-save:hover {
+  opacity: .8;
+}
+
+.popup__button-save:disabled {
+  background-color: #E5E5E5;
+}
+
+@media screen and (max-width: 450px) {
+  .popup__button-save {
+    font-size: 14px;
+  }
+
+  .popup__button-save:last-of-type {
+    margin-top: 34px;
+  }
+}
+
+@media screen and (max-height: 425px) {
+  .popup__button-save:last-of-type {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+  max-width: 880px;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #545454;
+  margin: 66px auto 60px;
+  padding: 0 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    font-size: 14px;
+    margin: 48px 0 29px;
+  }
+}
