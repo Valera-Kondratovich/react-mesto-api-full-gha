@@ -14,4 +14,3 @@ IP  130.193.50.95
 Frontend  https://mesto.kondratovich.nomoreparties.sbs
 
 Backend  https://api.mesto.kondratovich.nomoredomains.work
- 
