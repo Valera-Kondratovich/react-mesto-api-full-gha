@@ -1,4 +1,4 @@
-const { NODE_ENV, JWT_SECRET, SALT } = process.env;
+const { NODE_ENV, JWT_SECRET } = process.env;
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
@@ -18,9 +18,9 @@ const login = (req, res, next) => {
           const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'MDKL');
           res.cookie('jwt', token, {
             maxAge: 360000,
-            secure: true,
+            secure: false,
             httpOnly: true,
-            sameSite: 'none',
+            sameSite: 'Lax',
           });
           res.status(200).send(user);
         } else {
@@ -112,9 +112,9 @@ const updateAvatarUser = (req, res, next) => {
 
 const logout = (req, res) => {
   res.clearCookie('jwt', {
-    secure: true,
+    secure: false,
     httpOnly: true,
-    sameSite: 'none',
+    sameSite: 'Lax',
   }).send({ message: 'Выход' });
 };
 
