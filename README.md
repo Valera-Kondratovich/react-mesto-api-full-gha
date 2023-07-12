@@ -15,9 +15,3 @@ Frontend  https://mesto.kondratovich.nomoreparties.sbs
 
 Backend  https://api.mesto.kondratovich.nomoredomains.work
 
-
-[Адрес репозитория](https://github.com/Valera-Kondratovich/react-mesto-api-full-gha)
-
-[IP](130.193.50.95)
-[Frontend](https://mesto.kondratovich.nomoreparties.sbs)
-[Backend](https://api.mesto.kondratovich.nomoredomains.work)
