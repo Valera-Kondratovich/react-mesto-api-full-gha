@@ -113,9 +113,9 @@ const updateAvatarUser = (req, res, next) => {
 
 const logout = (req, res) => {
   res.clearCookie('jwt', {
-    secure: false,
+    secure: true,
     httpOnly: true,
-    sameSite: 'Lax',
+    sameSite: 'none',
   }).send({ message: 'Выход' });
 };
 
