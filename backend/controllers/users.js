@@ -41,7 +41,7 @@ const getUsers = (req, res, next) => {
 
 const createUser = (req, res, next) => {
   bcrypt
-    .hash(String(req.body.password), NODE_ENV === 'production' ? SALT : 10)
+    .hash(String(req.body.password), 10)
     .then((hash) => {
       User.create({
         ...req.body,
